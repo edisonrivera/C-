@@ -1,0 +1,1 @@
+void heapsort (int arreglo[],int n);
