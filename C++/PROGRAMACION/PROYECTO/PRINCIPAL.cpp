@@ -4,6 +4,7 @@ using namespace std;
 #include <iomanip>
 #include <fstream>
 #include <unistd.h>
+/*
 const int MAX = 100;
 typedef struct{
     string nombre_completo;
@@ -31,13 +32,13 @@ typedef struct{
     int cont2;
     tDoctor datosDoctor[MAX];
 }tLista2;
-
+*/
 //PROTOTIPOS DE MENÚS
 void titulo ();
 int menu_principal (int op);
 int menu_medicos (int opm);
 
-//MEDICOS
+/*MEDICOS
 void agregar_medicos (tDoctor doctor, tLista2 &lista2);
 void cargar_medicos (tLista2 &lista2);
 void modificar_medicos(tLista2 &lista2);
@@ -45,13 +46,14 @@ void eliminar_medicos (tLista2 &lista2);
 void archivar_medicos (tLista2 &lista2);
 void ordenar_medicos (tLista2 &lista2);
 void mostrar_medicos (tLista2 &lista2);
+*/
 
-//CITAS
-int menu_citas (int opc);
+/*citas (int opc);
 void cargar_citas (tLista &lista);
 void agregarcitas (tFormulario formulario, tLista &lista);
 void modificar_citas (tLista &lista);
 void eliminar_citas (tLista &lista);
+*/
 int main (){
     tFormulario formulario;
     tLista lista;
@@ -144,6 +146,7 @@ int menu_principal (int op){
     return op;
 }
 
+/*
 int menu_medicos (int opm){
     system ("cls");
     cout<<setw(67)<<"_______________________________"<<endl;
@@ -166,7 +169,7 @@ int menu_medicos (int opm){
     return opm;
 }
 
-//MEDICOS
+
 void cargar_medicos (tLista2 &lista2){
     tDoctor doctor;
     ifstream cargardoctores;
@@ -328,9 +331,9 @@ void archivar_medicos (tLista2 &lista2){
     }
     archivar.close();
 }
+*/
 
-
-// CITAS
+/* CITAS
 void cargar_citas (tLista &lista){
     tFormulario formulario;
     ifstream cargarcitas;
@@ -355,7 +358,8 @@ void cargar_citas (tLista &lista){
         cargarcitas.close();
     }
 }
-
+*/
+/*
 int menu_citas (int opc){
     system ("cls");
     cout<<setw(67)<<"_______________________________"<<endl;
@@ -377,7 +381,9 @@ int menu_citas (int opc){
     system ("cls");
     return opc;
 }
+*/
 
+/*
 void agregarcitas (tFormulario formulario, tLista &lista){
     ofstream agregar;
     agregar.open ("citas.txt", ios::out | ios::app);
@@ -529,3 +535,4 @@ void eliminar_citas (tLista &lista){
     }
     sleep (4);
 }
+*/
